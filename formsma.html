@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleformsma.css">
+    <script src="scriptformsma.js"></script>
+
+    <title>Formulir Pendaftaran Ekstrakurikuler SMA</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Ekstrakurikuler</h1>
+    
+    <form action="#">
+        <table border="1">
+            <tr>
+                <td><label for="nama">Nama Lengkap :</label></td>
+                <td><input type="text" id="nama" name="nama" required size="22"></td>
+            </tr>
+            <tr>
+                <td><label for="nis">NIS :</label></td>
+                <td><input type="text" id="nis" name="nis" required size="22"></td>
+            </tr>
+            <tr>
+                <td><label for="kelas">Kelas :</label></td>
+                <td><input type="text" id="kelas" name="kelas" required size="22"></td>
+            </tr>
+            <tr>
+                <td><label for="tgl_lahir">Tanggal Lahir (DD-MM-YYYY) : </label></td>
+                <td><input type="date" id="tgl_lahir" name="tgl_lahir" required size="22"></td>
+            </tr>
+            <tr>
+                <td><label>Jenis Kelamin :</label></td>
+                <td>
+                    <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" required>
+                    <label for="laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ekstrakurikuler">Pilih Ekstrakurikuler :</label></td>
+                <td>
+                    <input type="checkbox" id="pramuka" name="ekstrakurikuler[]" value="Pramuka">
+                    <label for="pramuka">Pramuka</label><br>
+                    <input type="checkbox" id="pmr" name="ekstrakurikuler[]" value="PMR">
+                    <label for="pmr">PMR</label><br>
+                    <input type="checkbox" id="kir" name="ekstrakurikuler[]" value="KIR">
+                    <label for="kir">KIR</label><br>
+                    <input type="checkbox" id="paskibra" name="ekstrakurikuler[]" value="Paskibra">
+                    <label for="paskibra">Paskibra</label><br>
+                    <input type="checkbox" id="seni_tari" name="ekstrakurikuler[]" value="Seni Tari">
+                    <label for="seni_tari">Seni Tari</label><br>
+                    <input type="checkbox" id="musik" name="ekstrakurikuler[]" value="Musik">
+                    <label for="musik">Musik</label><br>
+                    <input type="checkbox" id="lainnya" name="ekstrakurikuler[]" value="Lainnya">
+                    <label for="lainnya">Lainnya</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email :</label></td>
+                <td><input type="email" id="email" name="email" required size="22"></td>
+            </tr>
+            <tr>
+                <td><label for="telepon">Nomor Telepon :</label></td>
+                <td><input type="tel" id="telepon" name="telepon" required size="22"></td>
+            </tr>
+            <tr class="buttons">
+                <a> <i>Pastikan semua bagian sudah terisi sebelum mengirim.</i></a>
+                <td colspan="5">
+                    <input type="submit" value="Kirim">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Form Pendaftaran oleh @afifalhauzan. <a href="https://www.linkedin.com/in/afiif-al-hauzaan-alfian-3a5768289/" target="_blank">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
